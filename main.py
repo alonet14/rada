@@ -2,6 +2,9 @@ from src.util import file_util, get_data_util
 import os
 import matplotlib.pyplot as  plt
 import numpy as np
+from numpy import fft
+from
+fft.fft()
 # path_data_file = os.getcwd() + "\\resources\\rada\\I\\I_data.txt"
 #
 # get_data_util.write_data_to_file_from_nidaq(60, path_data_file, "Dev1", "ai4")
