@@ -35,16 +35,17 @@ print("time: {}".format(end_time - pass_time))
 print("Closing Stream...")
 task.close()
 print("closed Stream...")
+
 def butterwordth():
     pass
 
 #==========write data to file==============
-# time_value = np.linspace(0, end_time - pass_time, number_sample)
-# path_data_file = os.getcwd() + "\\resources\\rada\\I\\I_data.txt"
-# f = open(path_data_file, "w")
-# for index, val in enumerate(arr_np_data):
-#    f.write(str(val) + "\n")
-# f.close()
+time_value = np.linspace(0, end_time - pass_time, number_sample)
+path_data_file = os.getcwd() + "\\resources\\rada\\I\\I_data.txt"
+f = open(path_data_file, "w")
+for index, val in enumerate(arr_np_data):
+   f.write(str(val) + "\n")
+f.close()
 
 #plot data
 plt.xlabel("Time")
